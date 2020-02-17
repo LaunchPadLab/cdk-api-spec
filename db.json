@@ -1,1 +1,210 @@
-{}
+{
+  "dealerships": [
+    {
+      "id": 0,
+      "name": "Joe Schmo Ford",
+      "buildings": [0]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": 0,
+      "name": "Exciting New Opportunity",
+      "dealerships": [0],
+      "products": [0]
+    }
+  ],
+  "buildings": [
+    {
+      "id": 0,
+      "dealershipId": 0,
+      "name": "Main Building",
+      "type": "main",
+      "departments": [0, 1, 2, 3]
+    }
+  ],
+  "departments": [
+    {
+      "id": 0,
+      "buildingId": 0,
+      "name": "Sales Department",
+      "type": "sales",
+      "departmentAreas": [0],
+      "workflowStages": [0]
+    },
+    {
+      "id": 1,
+      "buildingId": 0,
+      "name": "Accounting Department",
+      "type": "accounting",
+      "departmentAreas": [1],
+      "workflowStages": []
+    },
+    {
+      "id": 2,
+      "buildingId": 0,
+      "name": "Parts Department",
+      "type": "parts",
+      "departmentAreas": [2],
+      "workflowStages": []
+    },
+    {
+      "id": 3,
+      "buildingId": 0,
+      "name": "Service Department",
+      "type": "service",
+      "departmentAreas": [3],
+      "workflowStages": []
+    }
+  ],
+  "departmentAreas": [
+    {
+      "id": 0,
+      "departmentId": 0,
+      "name": "Main Area",
+      "type": "main",
+      "staff": [0],
+      "equipment": [0]
+    },
+    {
+      "id": 1,
+      "departmentId": 0,
+      "name": "Main Area",
+      "type": "main",
+      "staff": [],
+      "equipment": []
+    },
+    {
+      "id": 2,
+      "departmentId": 0,
+      "name": "Main Area",
+      "type": "main",
+      "staff": [],
+      "equipment": []
+    },
+    {
+      "id": 3,
+      "departmentId": 0,
+      "name": "Main Area",
+      "type": "main",
+      "staff": [],
+      "equipment": []
+    }
+  ],
+  "staff": [
+    {
+      "id": 0,
+      "departmentAreaId": 0,
+      "name": "Sales Manager",
+      "type": "sales-manager"
+    }
+  ],
+  "equipment": [
+    {
+      "id": 0,
+      "departmentAreaId": 0,
+      "name": "Copier",
+      "type": "copier"
+    }
+  ],
+  "questions": [
+    {
+      "id": 0,
+      "name": "How many are there?",
+      "questionType": "numerical"
+    },
+    {
+      "id": 0,
+      "name": "What model?",
+      "questionType": "select",
+      "options": ["xerox", "hp"]
+    }
+  ],
+  "questionAttempts": [
+    {
+      "id": 0,
+      "opportunityId": 0,
+      "questionId": 0,
+      "value": 5,
+      "status": "incomplete",
+      "required": true,
+      "describedObject": "staff",
+      "describedId": 0
+    },
+    {
+      "id": 0,
+      "opportunityId": 0,
+      "questionId": 0,
+      "value": null,
+      "status": "complete",
+      "required": true,
+      "describedObject": "equipment",
+      "describedId": 0
+    }
+  ],
+  "workflowStages": [
+    {
+      "id": 0,
+      "departmentId": 0,
+      "name": "Outbound Sales",
+      "position": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": 0,
+      "object": "Building",
+      "type": "main",
+      "body": {
+        "name": "Main Building",
+        "departments": [1, 2, 3, 4]
+      }
+    },
+    {
+      "id": 1,
+      "object": "Department",
+      "type": "sales",
+      "body": {
+        "name": "Sales Department",
+        "departmentAreas": [],
+        "workflowStages": []
+      }
+    },
+    {
+      "id": 2,
+      "object": "Department",
+      "type": "accounting",
+      "body": {
+        "name": "Accounting Department",
+        "departmentAreas": [],
+        "workflowStages": []
+      }
+    },
+    {
+      "id": 3,
+      "object": "Department",
+      "type": "parts",
+      "body": {
+        "name": "Parts Department",
+        "departmentAreas": [],
+        "workflowStages": []
+      }
+    },
+    {
+      "id": 4,
+      "object": "Department",
+      "type": "service",
+      "body": {
+        "name": "Service Department",
+        "departmentAreas": [],
+        "workflowStages": []
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "name": "Elead"
+    }
+  ]
+}
