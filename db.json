@@ -114,7 +114,7 @@
       "questionType": "numerical"
     },
     {
-      "id": 0,
+      "id": 1,
       "name": "What model?",
       "questionType": "select",
       "options": ["xerox", "hp"]
@@ -128,18 +128,32 @@
       "value": 5,
       "status": "incomplete",
       "required": true,
-      "describedObject": "staff",
+      "describedObject": "Staff",
       "describedId": 0
     },
     {
       "id": 0,
       "opportunityId": 0,
-      "questionId": 0,
+      "questionId": 1,
       "value": null,
       "status": "complete",
       "required": true,
       "describedObject": "equipment",
       "describedId": 0
+    }
+  ],
+  "questionMappings": [
+    {
+      "id": 0,
+      "object": "Staff",
+      "type": "sales-manager",
+      "questions": [0]
+    },
+    {
+      "id": 1,
+      "object": "Equipment",
+      "type": "copier",
+      "questions": [1]
     }
   ],
   "workflowStages": [
