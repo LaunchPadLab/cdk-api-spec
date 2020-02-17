@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "json-server index.js"
+    "start": "json-server index.js --port $PORT"
   },
   "dependencies": {
     "json-server": "^0.16.0"
